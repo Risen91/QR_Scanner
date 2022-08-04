@@ -17,7 +17,7 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="174dp"
         android:text="Select user:"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <Button
@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="502dp"
+        android:layout_marginTop="479dp"
         android:layout_marginEnd="122dp"
         android:text="open activity 2" />
 
