@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class user_select extends AppCompatActivity implements View.OnClickListener {
     private Button buttonActivity2;
     private Button button_user_Lewis;
     private Button button_user_Frank;
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_user_select);
 
         buttonActivity2 = findViewById(R.id.buttonActivity2);
         button_user_Lewis = findViewById(R.id.button_user_Lewis);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
     public void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, scan.class);
         startActivity(intent);
     }
 
@@ -54,45 +54,3 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-        /*button_user_Lewis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            TextView text = findViewById(R.id.userName);
-                String user = String.format("Hello, Lewis");
-                text.setText(user);
-            }
-
-        });
-
-        button_user_Frank.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView text = findViewById(R.id.userName);
-                String user = String.format("Hello, Frank");
-                text.setText(user);
-            }
-
-
-
-
-    }
-        public void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onClick(View view) {
-
-    }
-}*/

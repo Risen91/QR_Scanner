@@ -13,14 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-public class MainActivity2 extends AppCompatActivity {
+public class scan extends AppCompatActivity {
     private Button button_mainMenu;
     private Button btn_scan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_scan);
 
         button_mainMenu =findViewById(R.id.button_mainMenu);
         btn_scan =findViewById(R.id.btn_scan);
@@ -52,7 +52,7 @@ public class MainActivity2 extends AppCompatActivity {
     {
         if(result.getContents() !=null)
         {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity2.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(scan.this);
             builder.setTitle("Result");
             builder.setMessage(result.getContents());
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener()
@@ -67,7 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
     });
 
     public void openActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, user_select.class);
         startActivity(intent);
     }
 }
